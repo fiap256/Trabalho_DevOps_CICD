@@ -10,7 +10,6 @@ resource "aws_ecs_task_definition" "my_application" {
     {
       name  = "my-application-container",
       image = "nginx:latest",
-      #   image        = aws_ecr_repository.application_repository.repository_url,
       cpu          = 256,
       memory       = 512,
       essential    = true,
